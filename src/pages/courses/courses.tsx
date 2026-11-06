@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import {
   BookOpen,
   Clock,
@@ -176,13 +177,13 @@ export default function Courses() {
                   <Clock size={15} />
                   Duration: {course.duration}
                 </div>
-                <a
-                  href="/contact"
+                <Link
+                  to="/contact"
                   className="mt-5 flex items-center justify-between rounded-xl bg-blue-50 px-4 py-3 text-sm font-bold text-blue-700 transition group-hover:bg-blue-600 group-hover:text-white"
                 >
                   Enquire Now
                   <ArrowRight size={17} />
-                </a>
+                </Link>
               </article>
             );
           })}
